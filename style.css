@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+body {
+  line-height:1;
+}
+ol, ul {
+  list-style:none;
+}
+blockquote, q {
+  quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+/*end http://meyerweb.com/eric/tools/css/reset/ */
+del { text-decoration:line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+select, input, textarea, button { font:99% sans-serif; }
+html { overflow-y:scroll; }
+a:hover, a:active { outline:none; }
+ul, ol { padding-left:2em; }
+ol { list-style-type:decimal; }
+small { font-size:85%; }
+strong, th { font-weight:bold; }
+td { vertical-align:top; }
+sub, sup { font-size:75%; line-height:0; position:relative; }
+sup { top:-0.5em; }
+sub { bottom:-0.25em; }
+textarea { overflow:auto; }
+input[type="radio"] { vertical-align:text-bottom; }
+input[type="checkbox"] { vertical-align:bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor:pointer; }
+button, input, select, textarea { margin:0; }
+h1, h2, h3, h4, h5, h6 { font-weight:bold; }
+
+html * {
+  font-family:"Lucida Sans", "Lucida Grande", sans-serif;
+}
+pre, code, kbd, samp {font-family:Monaco,"Bitstream Vera Sans Mono","Lucida Console",Terminal,monospace;}
+p {
+  font-weight:lighter;
+  margin:0 0 1em 0;
+}
+strong { font-weight:bold; }
+em { }
+ol,ul {
+    margin-bottom:1em;
+}
+dt {
+    font-weight:bold;
+}
+dd {
+    margin-left:2em;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight:lighter;
+    margin-top:2em;
+    margin-bottom:1em;
+}
+h1 { font-size: 153.9% }
+h2 { font-size: 153.9% }
+h3 { font-size: 146.5% }
+h4 { font-size: 138.5% }
+h5 { font-size: 138.5% }
+h6 { font-size: 138.5% }
+img { margin: 0 0 1em 0; }
+
+/*colors*/
+/*
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+*/
+html * {
+  background:#002b36;
+  color:#839496;
+}
+h1,h2,h3,h4,h5,h6 {
+  color:#93a1a1;
+  border-color:#839496;
+}
+a { color:#268bd2; }
+a:active, a:visited { color:#6c71c4; }
+a:hover { color:#dc322f; }
+/*layout*/
+body {
+  margin:0 1em;
+}
+#logo code {
+  color:#b58900;
+  display:block;
+  margin:0 auto;
+  white-space:pre;
+  width:36em;
+}
+#header h2 {
+  border-bottom:1px solid;
+  margin-top:1em;
+}
+#main {
+  margin:2em;
+  min-width:32em;
+}
+section h1 {
+  color:#cb4b16;
+  font-weight:500;
+  font-size:1em;
+}
+section h2 {
+  font-size:1em;
+  margin:0 0 .33em;
+}
+section ul {
+  margin-left:.5em;
+  padding-left:1.5em;
+  list-style:circle outside;
+  background:#073642;
+}
+section ul li {
+  color:#cb4b16;
+  line-height:1.5em;
+}
+section ul li span {
+  color:#839496;
+  margin:0 0 0 .33em;
+}
+
+input, textarea, select {
+  display:inline-block;
+  border:1px solid;
+}
+input[type="text"], textarea, select {
+  padding:0 .5em;
+}
+input[type="hidden"] {
+  display:none;
+}
+input:focus {
+  background:#eee8d5;
+  color:#002b36;
+}
+
+#footer {
+  border-top:1px solid #839496;
+  clear:both;
+  margin:1em 0;
+  padding:.5em 0 0;
+}
+#footer p {
+  color:#b58900;
+  margin:0;
+}
+
+#maillist form {
+ border: 2px inset #839496;
+ width:70%;
+ margin:0 auto;
+}
+#maillist form fieldset {
+  padding:0 1em 1em;
+  clear:both;
+}
+#maillist form fieldset ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+  background:inherit;
+}
+#maillist form fieldset dl dt {
+  float:left;
+  clear:left;
+  width:10em;
+  padding-bottom:.3em;
+}
+#maillist form fieldset dl dd {
+  float:left;
+  padding-bottom:.3em;
+}
+#maillist fieldset.buttons input {
+ float:right;
+}
